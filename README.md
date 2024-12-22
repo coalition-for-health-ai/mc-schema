@@ -2,16 +2,17 @@
 
 ## About
 
-The CHAI Applied Model Card supports meeting the criteria for HTI-1 for predictive DSIs defined as "...technology that supports decision-making based on algorithms or models that derive relationships from training data and then produce an output that results in prediction, classification, recommendation, evaluation, or analysis." In addition, this model card provides transparency for all Five of CHAI’s Principles of Responsible AI (Transparency, Safety, Security & Privacy, Fairness & Bias, and Usefulness).
+The CHAI Applied Model Card describes an AI solution focused on the application in a health use case. This model card supports meeting the criteria for HTI-1 for predictive DSIs defined as "...technology that supports decision-making based on algorithms or models that derive relationships from training data and then produce an output that results in prediction, classification, recommendation, evaluation, or analysis." In addition, this model card provides transparency for all Five of CHAI’s Principles of Responsible AI (Transparency, Safety, Security & Privacy, Fairness & Bias, and Usefulness).
 
 In this current draft release we have included:
 - the complete documentation for the model card (includes: instructions, example, resources, references)
-- a fillable template of the model card for stress-testing
-- a separate copy of the example provided in the full documentation for reference
-- a "schema" defining a structured format in which applications should produce and consume Applied Model Cards
-- a filled Applied Model Card schema of the example provided in the full documentation
+- a fillable template of the model card
+- a schema defining a structured format for which applications should produce and consume Applied Model Cards
+- an Applied Model Card instance document for the example provided in the full documentation
 
-For more information, please visit https://chai.org/draft-chai-applied-model-card/. 
+For more information on the Applied Model Card, please visit https://chai.org/draft-chai-applied-model-card/. 
+
+For more information on the Applied Model Card schema, please visit [DOCUMENTATION.md](DOCUMENTATION.md).
 
 ## Disclaimer
 
