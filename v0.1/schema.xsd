@@ -2,8 +2,10 @@
 <xs:schema
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
 	xmlns:amc="https://amc.chai.org/v0.1/schema.xsd"
-	xmlns:bibtex="http://bibtexml.sf.net/" elementFormDefault="qualified" targetNamespace="https://amc.chai.org/v0.1/schema.xsd" version="v0.1">
+	xmlns:bibtex="http://bibtexml.sf.net/"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="https://amc.chai.org/v0.1/schema.xsd" version="v0.1">
 	<xs:import namespace="http://bibtexml.sf.net/" schemaLocation="https://amc.chai.org/bibtexml.xsd" />
+	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" />
 	<xs:element name="AppliedModelCard">
 		<xs:complexType>
 			<xs:sequence>
@@ -16,6 +18,7 @@
 				<xs:element name="KeyMetrics" type="amc:KeyMetricsType" />
 				<xs:element name="Resources" type="amc:ResourcesType" />
 				<xs:element name="References" type="amc:ReferencesType" />
+				<xs:element ref="ds:Signature" minOccurs="0" />
 			</xs:sequence>
 		</xs:complexType>
 	</xs:element>
