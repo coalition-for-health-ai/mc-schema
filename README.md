@@ -14,6 +14,8 @@ For more information on the Applied Model Card, please visit https://chai.org/dr
 
 For more information on the Applied Model Card schema, please visit [DOCUMENTATION.md](DOCUMENTATION.md).
 
+We welcome public feedback and stress testing of the CHAI Draft Applied Model Card. The [public feedback period](https://forms.office.com/Pages/ResponsePage.aspx?id=Zv5aXEI-zESuBuhGDQQnKa0sW8JnnOlNpzc1fiNICBpUMEk3WERUVUxRUzU3SVhLS1BRS0IwRzdERS4u) will be open from 11/22/2024 to 11:00 PM EST 01/22/2025. For any questions or concerns please reach out to admin@chai.org. Thank you!
+
 ## Disclaimer
 
 The content present is work-in-progress and in draft form available for public comment beginning on 11/22/2024 and ending on 01/22/2025. The mention or sharing of any examples, products, organizations, or individuals does not indicate any endorsement of those examples, products, organizations, or individuals by the Coalition for Health AI (CHAI). Any examples provided here are still under review for alignment with existing standards and instructions. We welcome feedback and stress-testing of the tool in draft form. 
