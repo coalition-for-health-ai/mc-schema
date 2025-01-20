@@ -9,7 +9,7 @@ The schema is provided as an XML Schema Definition. We provide an example of a m
 All text fields in the Applied Model Card allow Markdown formatting. This can be used to style text and to add text, links, images, and more. The schema also includes a references section; we defer to [BibTeXML](https://bibtexml.sourceforge.net/) to describe references. 
 
 Applications that wish to produce Applied Model Cards as PDFs should include the following custom metadata in each PDF:
-- **`chaiAmcXml`**: The Applied Model Card instance document, serialized as an XML string.
-- **`chaiAmcSoftwareId`**: An arbitrary string describing the application producing the PDF; this is used to trace bugs in Applied Model Card production back to the bugs' sources.
+- **`chaiMcXml`**: The Applied Model Card instance document, serialized as an XML string.
+- **`chaiMcSoftwareId`**: An arbitrary string describing the application producing the PDF; this is used to trace bugs in Applied Model Card production back to the bugs' sources.
 
-Users of this schema, and of the Applied Model Card itself, should do so with the understanding this product is in draft form and is not yet finalized. As such, the Applied Model Card schema is subject to changes; such changes will be made in a non-breaking manner. The changelog for this project can be viewed at https://github.com/coalition-for-health-ai/amc/releases. 
+Users of this schema, and of the Applied Model Card itself, should do so with the understanding this product is in draft form and is not yet finalized. As such, the Applied Model Card schema is subject to changes; such changes will be made in a non-breaking manner. The changelog for this project can be viewed at https://github.com/coalition-for-health-ai/mc-schema/releases.

@@ -24,13 +24,15 @@ The information provided in this document is for general informational purposes 
 
 This document should not be relied upon as a substitute for consulting with qualified legal or compliance professionals. Organizations and individuals are encouraged to seek advice specific to their unique circumstances to ensure adherence to applicable laws, regulations, and standards.
 
+## Copyright
+
+Copyright (c) 2024 Coalition for Health AI, Inc.
+
 ## License
 
-This work is licensed under a Creative Commons Attribution-NoDerivatives 4.0 International License (CC BY-ND 4.0). 
+Permission is hereby granted, free of charge, to any person obtaining a copy of this applied model card and associated documentation files (the "Material"), to use the Material without restriction, including without limitation the rights to share, copy, modify, adapt, distribute, and create derivative works of the Material.
 
-You are free to share this material (copy and redistribute the material in any medium or format for any purpose, even commercially) under the following terms:
-- **Attribution**: You must give [appropriate credit](https://creativecommons.org/licenses/by-nd/4.0/#ref-appropriate-credit), provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
-- **No Derivatives**: If you [remix, transform, or build upon](https://creativecommons.org/licenses/by-nd/4.0/#ref-some-kinds-of-mods) the material, you may not distribute the modified material.
-- **No additional restrictions** — You may not apply legal terms or [technological measures](https://creativecommons.org/licenses/by-nd/4.0/#ref-technological-measures) that legally restrict others from doing anything the license permits.
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
-For more information about this license, visit https://creativecommons.org/licenses/by-nd/4.0/.
+The Material is provided "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE MATERIAL OR THE USE OR OTHER DEALINGS IN THE MATERIAL.
+

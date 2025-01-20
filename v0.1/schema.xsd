@@ -1,23 +1,28 @@
+<!--
+Copyright (c) 2024 Coalition for Health AI, Inc.
+
+The license for this source code can be found at https://mc.chai.org/LICENSE.
+-->
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:amc="https://amc.chai.org/v0.1/schema.xsd"
+	xmlns:mc="https://mc.chai.org/v0.1/schema.xsd"
 	xmlns:bibtex="http://bibtexml.sf.net/"
-	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="https://amc.chai.org/v0.1/schema.xsd" version="v0.1">
-	<xs:import namespace="http://bibtexml.sf.net/" schemaLocation="https://amc.chai.org/bibtexml.xsd" />
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="https://mc.chai.org/v0.1/schema.xsd" version="v0.1">
+	<xs:import namespace="http://bibtexml.sf.net/" schemaLocation="https://mc.chai.org/bibtexml.xsd" />
 	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" />
 	<xs:element name="AppliedModelCard">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="BasicInfo" type="amc:BasicInfoType" />
-				<xs:element name="ReleaseInfo" type="amc:ReleaseInfoType" />
-				<xs:element name="ModelSummary" type="amc:ModelSummaryType" />
-				<xs:element name="UsesAndDirections" type="amc:UsesAndDirectionsType" />
-				<xs:element name="Warnings" type="amc:WarningsType" />
-				<xs:element name="TrustIngredients" type="amc:TrustIngredientsType" />
-				<xs:element name="KeyMetrics" type="amc:KeyMetricsType" />
-				<xs:element name="Resources" type="amc:ResourcesType" />
-				<xs:element name="References" type="amc:ReferencesType" />
+				<xs:element name="BasicInfo" type="mc:BasicInfoType" />
+				<xs:element name="ReleaseInfo" type="mc:ReleaseInfoType" />
+				<xs:element name="ModelSummary" type="mc:ModelSummaryType" />
+				<xs:element name="UsesAndDirections" type="mc:UsesAndDirectionsType" />
+				<xs:element name="Warnings" type="mc:WarningsType" />
+				<xs:element name="TrustIngredients" type="mc:TrustIngredientsType" />
+				<xs:element name="KeyMetrics" type="mc:KeyMetricsType" />
+				<xs:element name="Resources" type="mc:ResourcesType" />
+				<xs:element name="References" type="mc:ReferencesType" />
 				<xs:element ref="ds:Signature" minOccurs="0" />
 			</xs:sequence>
 		</xs:complexType>
@@ -41,7 +46,7 @@
 	<xs:complexType name="ModelSummaryType">
 		<xs:sequence>
 			<xs:element name="Summary" type="xs:string" />
-			<xs:element name="Keywords" type="amc:KeywordsType" />
+			<xs:element name="Keywords" type="mc:KeywordsType" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="KeywordsType">
@@ -67,8 +72,8 @@
 	</xs:complexType>
 	<xs:complexType name="TrustIngredientsType">
 		<xs:sequence>
-			<xs:element name="AISystemFacts" type="amc:AISystemFactsType" />
-			<xs:element name="TransparencyInformation" type="amc:TransparencyInformationType" />
+			<xs:element name="AISystemFacts" type="mc:AISystemFactsType" />
+			<xs:element name="TransparencyInformation" type="mc:TransparencyInformationType" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="AISystemFactsType">
@@ -94,9 +99,9 @@
 	</xs:complexType>
 	<xs:complexType name="KeyMetricsType">
 		<xs:sequence>
-			<xs:element name="UsefulnessUsabilityEfficacy" type="amc:KeyMetricType" />
-			<xs:element name="FairnessEquity" type="amc:KeyMetricType" />
-			<xs:element name="SafetyReliability" type="amc:KeyMetricType" />
+			<xs:element name="UsefulnessUsabilityEfficacy" type="mc:KeyMetricType" />
+			<xs:element name="FairnessEquity" type="mc:KeyMetricType" />
+			<xs:element name="SafetyReliability" type="mc:KeyMetricType" />
 		</xs:sequence>
 	</xs:complexType>
 	<xs:complexType name="KeyMetricType">
