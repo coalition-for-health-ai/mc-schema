@@ -20,7 +20,7 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 				<xs:element name="TrustIngredients" type="mc:TrustIngredientsType" />
 				<xs:element name="KeyMetrics" type="mc:KeyMetricsType" />
 				<xs:element name="Resources" type="mc:ResourcesType" />
-				<xs:element name="References" type="xs:String" />
+				<xs:element name="References" type="xs:string" />
 				<xs:element ref="ds:Signature" minOccurs="0" />
 			</xs:sequence>
 		</xs:complexType>
