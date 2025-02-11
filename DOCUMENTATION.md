@@ -6,7 +6,7 @@ This Git repository exists to provide a schema for the CHAI Applied Model Card. 
 
 The schema is provided as an XML Schema Definition. We provide an example of a model card instance document in XML format. 
 
-All text fields in the Applied Model Card allow Markdown formatting. This can be used to style text and to add text, links, images, and more. The schema also includes a references section; we defer to [BibTeXML](https://bibtexml.sourceforge.net/) to describe references. 
+All text fields in the Applied Model Card allow Markdown formatting. This can be used to style text and add links, images, and more. The schema also includes a "Bibliography" element; the contents of this element should be a string conforming to the BibTeX format. 
 
 Applications that wish to produce Applied Model Cards as PDFs should include the following custom metadata in each PDF:
 - **`chaiMcXml`**: The Applied Model Card instance document, serialized as an XML string.
