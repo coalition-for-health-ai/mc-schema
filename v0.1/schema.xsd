@@ -119,7 +119,6 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 			<xs:element name="PeerReviewedPublications" type="xs:string" />
 			<xs:element name="ReimbursementStatus" type="xs:string" minOccurs="0" />
 			<xs:element name="PatientConsentOrDisclosure" type="xs:string" />
-			<xs:element name="StakeholdersConsulted" type="xs:string" />
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
