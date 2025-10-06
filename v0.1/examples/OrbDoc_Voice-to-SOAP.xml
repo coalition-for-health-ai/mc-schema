@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2024 Coalition for Health AI, Inc.
+
+The license for this source code can be found at https://mc.chai.org/LICENSE.
+-->
+<AppliedModelCard xmlns="https://mc.chai.org/v0.1/schema.xsd">
+	<BasicInfo>
+		<ModelName>OrbDoc Voice-to-SOAP Documentation System</ModelName>
+		<ModelDeveloper>OrbDoc</ModelDeveloper>
+		<DeveloperContact>abdus.muwwakkil@orbdoc.com</DeveloperContact>
+	</BasicInfo>
+	<ReleaseInfo>
+		<ReleaseStage>Commercial</ReleaseStage>
+		<ReleaseDate>June 2024</ReleaseDate>
+		<ReleaseVersion>2.0</ReleaseVersion>
+		<GlobalAvailability>United States, Canada, and Mexico</GlobalAvailability>
+		<RegulatoryApproval>HIPAA Compliant</RegulatoryApproval>
+	</ReleaseInfo>
+	<ModelSummary>
+		<Summary>The OrbDoc system is a voice-first, AI-powered clinical documentation platform that transforms how healthcare providers capture and utilize patient care information. The system processes voice recordings of doctor-patient conversations or physician dictations and converts them into structured clinical documentation with sophisticated medical context understanding. Beyond basic documentation, OrbDoc provides timeline visualization of patient journeys, progressive discharge documentation that evolves with care, advanced medication reconciliation, and automated billing support through CPT code generation. The system significantly reduces documentation time, enhances clinical workflow efficiency, optimizes revenue capture, and helps facilities improve care coordination to reduce readmission risks. Designed to work seamlessly across various healthcare settings including community health centers and rural facilities, OrbDoc integrates with major EHR systems and functions even in environments with limited connectivity.</Summary>
+		<Keywords>
+			<Keyword>Clinical Documentation</Keyword>
+			<Keyword>SOAP Notes</Keyword>
+			<Keyword>Voice Recognition</Keyword>
+			<Keyword>AI Transcription</Keyword>
+			<Keyword>Healthcare Documentation</Keyword>
+			<Keyword>Discharge Summaries</Keyword>
+			<Keyword>Natural Language Processing</Keyword>
+			<Keyword>Electronic Health Records</Keyword>
+			<Keyword>Medical Transcription</Keyword>
+			<Keyword>Community Health Centers</Keyword>
+			<Keyword>Clinical Workflow Optimization</Keyword>
+			<Keyword>Documentation Efficiency</Keyword>
+			<Keyword>Patient Care Transitions</Keyword>
+			<Keyword>Medication Reconciliation</Keyword>
+			<Keyword>Timeline Visualization</Keyword>
+			<Keyword>CPT Code Generation</Keyword>
+			<Keyword>Revenue Cycle Optimization</Keyword>
+			<Keyword>Clinical Documentation Improvement (CDI)</Keyword>
+			<Keyword>Readmission Prevention</Keyword>
+			<Keyword>Mobile Health Technology</Keyword>
+			<Keyword>Rural Healthcare</Keyword>
+			<Keyword>Underserved Communities</Keyword>
+		</Keywords>
+	</ModelSummary>
+	<UsesAndDirections>
+		<IntendedUseAndWorkflow>For clinical documentation including SOAP notes, discharge summaries, and billing support through CPT code generation based on recorded patient-provider conversations or dictations.</IntendedUseAndWorkflow>
+		<PrimaryIntendedUsers>Healthcare providers, particularly physicians and advanced practice providers in various clinical settings.</PrimaryIntendedUsers>
+		<HowToUse>Providers record conversations or dictations using the OrbVoice 2.0 mobile app, which processes the audio and generates structured clinical documentation with timeline visualization that can be reviewed and edited before being saved to the patient record. The system integrates with EHR systems including Athena, OpenMRS, and OpenEMR.</HowToUse>
+		<TargetedPatientPopulation>The system is designed for all patients requiring clinical documentation in outpatient, inpatient, and urgent care settings. It provides particular benefits for patients at risk of readmission due to documentation gaps, patients with complex care plans requiring detailed follow-up instructions, and patients in rural or underserved areas where documentation resources may be limited.</TargetedPatientPopulation>
+		<CautionedOutOfScopeSettings>The system is not designed for emergency alerting or clinical decision support. It is a documentation tool and should not replace clinical judgment.</CautionedOutOfScopeSettings>
+	</UsesAndDirections>
+	<Warnings>
+		<KnownRisksAndLimitations>The system achieves 98% transcription accuracy, but may still occasionally misinterpret complex medical terminology in challenging audio environments. The system does not perform diagnostic functions or provide clinical alerts.</KnownRisksAndLimitations>
+		<KnownBiasesOrEthicalConsiderations>Performance variation exists across different medical specialties, with stronger performance in cardiology (52% AER) compared to primary care (31% AER) and endocrinology (26% AER). The system has been extensively tested across these clinical contexts to identify and address potential biases. The speech recognition component utilizes custom terminology adaptation to improve recognition of domain-specific medical terminology.</KnownBiasesOrEthicalConsiderations>
+		<ClinicalRiskLevel>Low - the system generates documentation that is reviewed by healthcare providers before finalization.</ClinicalRiskLevel>
+	</Warnings>
+	<TrustIngredients>
+		<AISystemFacts>
+			<OutcomesAndOutputs>Structured clinical documentation from voice (SOAP notes, discharge summaries), timeline visualization, medication reconciliation support, and automated CPT code suggestions for billing.</OutcomesAndOutputs>
+			<ModelType>Hybrid speech recognition and medical NLP pipeline leveraging domain-adapted large language models.</ModelType>
+			<FoundationModels>DeepGram Medical Nova 2 for clinical speech recognition.</FoundationModels>
+			<InputDataSource>Voice recordings of doctor-patient conversations and clinician dictations; EHR context where available.</InputDataSource>
+			<OutputAndInputDataTypes>Input: audio recordings and optional EHR context. Output: structured SOAP notes, discharge summaries, timelines, and CPT code suggestions.</OutputAndInputDataTypes>
+			<DevelopmentDataCharacterization>Test cases across 3 specialties (Primary Care, Cardiology, Endocrinology) and 3 complexity levels (Low, Moderate, High), with realistic patient scenarios, varied demographics, and comorbidities; benchmarking informed by MIMIC-IV.</DevelopmentDataCharacterization>
+			<BiasMitigationApproaches>Cross-specialty evaluation and periodic retraining targeting underperforming specialties; custom medical terminology adaptation; monitoring of performance disparities across specialties and complexity levels.</BiasMitigationApproaches>
+			<OngoingMaintenance>Regular retraining cycles, periodic revalidation, and regression testing for each update to ensure continued safety and performance.</OngoingMaintenance>
+			<Security>HIPAA-compliant handling of clinical audio and documents; provider-controlled consent workflow; integrations with EHRs following institutional policies.</Security>
+			<Transparency>Model card documentation maintained and updated regularly; stakeholder feedback from clinical reviewers and production users incorporated.</Transparency>
+		</AISystemFacts>
+		<TransparencyInformation>
+			<FundingSource>Company-funded</FundingSource>
+			<ThirdPartyInformation>DeepGram Medical Nova 2 (ASR), SNOMED CT (terminology), MIMIC-IV (benchmarking)</ThirdPartyInformation>
+			<StakeholdersConsulted>Blind review by 5 clinicians from different specialties; production deployment feedback from 476+ healthcare providers.</StakeholdersConsulted>
+		</TransparencyInformation>
+	</TrustIngredients>
+	<KeyMetrics>
+		<UsefulnessUsabilityEfficacy>
+			<MetricGoal>Evaluate the system's ability to accurately capture and structure clinical information from voice recordings.</MetricGoal>
+			<Result>100% Captured Entity Rate (CER) across all tested scenarios (n=350), with overall Accurate Entity Rate (AER) of 36.5%. Specialty breakdown: Primary Care 31.25% AER (n=120), Cardiology 52.17% AER (n=115), Endocrinology 26.09% AER (n=115).</Result>
+			<Interpretation>The system captures all relevant clinical entities but varies in accuracy by specialty, with strongest performance in cardiology; performance patterns align with specialty-specific terminology complexity.</Interpretation>
+			<TestType>Internal evaluation with blind clinical review</TestType>
+			<TestingDataDescription>Test cases across 3 specialties and 3 complexity levels with detailed entity tracking; realistic patient scenarios with varied demographics and comorbidities.</TestingDataDescription>
+			<ValidationProcessAndJustification>Validation compares AI-generated notes against human expert documentation using CER and AER; results reviewed via blind assessment by 5 clinicians across specialties.</ValidationProcessAndJustification>
+		</UsefulnessUsabilityEfficacy>
+		<FairnessEquity>
+			<MetricGoal>Evaluate for differences in performance across medical specialties and case complexity.</MetricGoal>
+			<Result>Performance varies by specialty: Cardiology 52.17% AER, Primary Care 31.25% AER, Endocrinology 26.09% AER; similar variation across complexity levels; performance 15-20% above comparable solutions.</Result>
+			<Interpretation>Performs well under stress tests; requires further optimization for certain specialties, particularly endocrinology; retraining targets underperforming areas.</Interpretation>
+			<TestType>Internal cross-specialty evaluation</TestType>
+			<TestingDataDescription>Test cases spanning multiple specialties with detailed entity matching; includes diverse demographics and regional language variations.</TestingDataDescription>
+			<ValidationProcessAndJustification>Systematically tested across specialties and complexity levels to detect disparities; periodic revalidation ensures equitable performance.</ValidationProcessAndJustification>
+		</FairnessEquity>
+		<SafetyReliability>
+			<MetricGoal>Evaluate the system's ability to maintain clinical accuracy and prevent hallucinations.</MetricGoal>
+			<Result>Multi-layered validation (schema checks, prompt engineering, retries) resulted in zero critical omissions across 1,500+ clinical scenarios during testing.</Result>
+			<Interpretation>The system effectively mitigates hallucinations in clinical documentation; validation checks include medication dosage formats, diagnostic code validity, and temporal relationship consistency.</Interpretation>
+			<TestType>Internal validation and regression testing</TestType>
+			<TestingDataDescription>Evaluation against expected structures and medical content accuracy with focus on medication interactions and contraindications.</TestingDataDescription>
+			<ValidationProcessAndJustification>Multiple validation layers and regression testing per release to ensure continued safety and reliability.</ValidationProcessAndJustification>
+		</SafetyReliability>
+	</KeyMetrics>
+	<Resources>
+		<EvaluationReferences>Production deployment metrics available through app store analytics. System architecture leverages DeepGram Medical Nova 2 for ASR, SNOMED CT for terminology standardization, and MIMIC-IV for benchmarking.</EvaluationReferences>
+		<PeerReviewedPublications>N/A</PeerReviewedPublications>
+		<ReimbursementStatus>System generates CPT codes to support billing processes; providers should verify payer-specific compliance.</ReimbursementStatus>
+		<PatientConsentOrDisclosure>Healthcare providers are responsible for obtaining appropriate patient consent for voice recording and AI-assisted documentation processing in accordance with local regulations and institutional policies.</PatientConsentOrDisclosure>
+	</Resources>
+	<Bibliography />
+</AppliedModelCard>
+
+
