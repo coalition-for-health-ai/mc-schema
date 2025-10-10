@@ -89,7 +89,6 @@ Outputs:
 		</AISystemFacts>
 		<TransparencyInformation>
 			<FundingSource>Penguin AI</FundingSource>
-			<ThirdPartyInformation>NA</ThirdPartyInformation>
 			<StakeholdersConsulted>Medical Director, Nurses</StakeholdersConsulted>
 		</TransparencyInformation>
 	</TrustIngredients>
@@ -216,11 +215,9 @@ Criteria Fulfillment Rate: Users would provide the list of criteria against whic
 		</SafetyReliability>
 	</KeyMetrics>
 	<Resources>
-		<EvaluationReferences>Evaluation report or publication, if available: No publication – evaluation metrics are shared above</EvaluationReferences>
-		<ClinicalTrial>Clinical trial report or publication, if available: N/A</ClinicalTrial>
-		<PeerReviewedPublications>Abstracts, papers, and peer reviewed publication(s): N/A</PeerReviewedPublications>
-		<ReimbursementStatus>Reimbursement status, if applicable: N/A</ReimbursementStatus>
-		<PatientConsentOrDisclosure>Patient informed consent or disclosure: N/A</PatientConsentOrDisclosure>
+		<EvaluationReferences>Evaluation report or publication, if available: No publication - evaluation metrics are shared above</EvaluationReferences>
+		<PeerReviewedPublications>N/A</PeerReviewedPublications>
+		<PatientConsentOrDisclosure>N/A</PatientConsentOrDisclosure>
 	</Resources>
 	<Bibliography />
 </AppliedModelCard>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2024 Coalition for Health AI, Inc.
+
+The license for this source code can be found at https://mc.chai.org/LICENSE.
+-->
+<AppliedModelCard
+	xmlns="https://mc.chai.org/v0.1/schema.xsd"
+	xmlns:bibtex="http://bibtexml.sf.net/">
+	<BasicInfo>
+		<ModelName>BriefCase-Quantification of Abdominal Aortic Measurement (M-AbdAo-02-RT)</ModelName>
+		<ModelDeveloper>Aidoc</ModelDeveloper>
+		<DeveloperContact>www.aidoc.com/contact-support/ or email:info@aidoc.com</DeveloperContact>
+	</BasicInfo>
+	<ReleaseInfo>
+		<ReleaseStage>FDA Cleared, Commercial (K241112)</ReleaseStage>
+		<ReleaseDate>May 2024</ReleaseDate>
+		<ReleaseVersion>M-AbdAo-02-RT</ReleaseVersion>
+		<GlobalAvailability>US, EU (CE Marked), UK (UKCA Marked), Canada (MDEL), Israel (AMAR), UAE and South Africa.</GlobalAvailability>
+		<RegulatoryApproval>Please find attached the M-AbdAo-02-RT [510(k) summary](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K241112).</RegulatoryApproval>
+	</ReleaseInfo>
+	<ModelSummary>
+		<Summary>The BriefCase-Quantification Abdominal Aortic Measurement solution is a radiological medical image management and processing device. The software consists of a single module based on an algorithm programmed component and is intended to run on a linux-based server in a cloud environment. The BriefCase-Quantification receives filtered DICOM Images, and processes them chronologically by running the algorithm on relevant series to measure the maximum abdominal aortic diameter. Following the AI processing, the output of the algorithm analysis is transferred to an image review software (desktop application), and forwarded to user review in the PACS. BriefCase-Quantification produces a preview image annotated with the maximum diameter measurement. The diameter marking is not intended to be a final output, but serves the purpose of visualization and measurement. The original, unmarked series remains available in the PACS as well. The preview image presents an unofficial measurement which is not final, and the user is instructed to review the full image and any other clinical information before making a clinical decision. The image includes a disclaimer: "Not for diagnostic use. The measurement is unofficial, not final, and must be reviewed by a radiologist." BriefCase-Quantification is not intended to evaluate post-operative aortas</Summary>
+		<Keywords />
+	</ModelSummary>
+	<UsesAndDirections>
+		<IntendedUseAndWorkflow>The BriefCase-Quantification Abdominal Aortic Measurement solution is a radiological image management and processing system software indicated for use in the analysis of CT exams with contrast that include the abdominal aorta in adults or transitional adolescents aged 18 and older. The device is intended to assist appropriately trained medical specialists by providing the user with the maximum abdominal aortic diameter measurement of cases that include the abdominal aorta (M-AbdAo). BriefCase-Quantification is indicated to evaluate normal and aneurysmal abdominal aortas and is not intended to evaluate post-operative aortas.</IntendedUseAndWorkflow>
+		<PrimaryIntendedUsers>The BriefCase-Quantification Abdominal Aortic Measurement solution is intended to be used by appropriately trained medical specialists. Appropriately trained medical specialists for abdominal aortic measurement include emergency physicians, radiologists, vascular surgeons, cardiothoracic surgeons, and cardiologists).</PrimaryIntendedUsers>
+		<HowToUse>The BriefCase-Quantification Abdominal Aortic Measurement solution produces a preview image annotated with the maximum diameter measurement. The diameter marking is not intended to be a final output, but serves the purpose of visualization and measurement. The original, unmarked series remains available in the PACS as well. The preview image presents an unofficial measurement which is not final, and the user is instructed to review the full image and any other clinical information before making a clinical decision.</HowToUse>
+		<TargetedPatientPopulation>Adults or transitional adolescents aged 18 and older.</TargetedPatientPopulation>
+		<CautionedOutOfScopeSettings>Results are not intended to be used on a stand-alone basis for clinical decision-making or otherwise preclude clinical assessment of cases. These measurements are unofficial, are not final, and are subject to change after review by a radiologist. For final clinically approved measurements, please refer to the official radiology report. Clinicians are responsible for viewing full images per the standard of care. Only for use by appropriately trained medical specialists. Please refer to BriefCase-Quantification User Guide ([UG0010](https://community.aidoc.com/private/login)) for further information on warnings and precautions.</CautionedOutOfScopeSettings>
+	</UsesAndDirections>
+	<Warnings>
+		<KnownRisksAndLimitations>Notified clinicians are responsible for viewing full images per the standard of care. Please refer to BriefCase-Quantification User Guide ([UG0010](https://community.aidoc.com/private/login)), label, and additional tutorial materials provided by the company for further information on risks and limitations.</KnownRisksAndLimitations>
+		<KnownBiasesOrEthicalConsiderations>None</KnownBiasesOrEthicalConsiderations>
+		<ClinicalRiskLevel>Low, Class II (FDA) / IIa (EU)</ClinicalRiskLevel>
+	</Warnings>
+	<TrustIngredients>
+		<AISystemFacts>
+			<OutcomesAndOutputs>The device is intended to assist appropriately trained medical specialists by providing the user with the maximum abdominal aortic diameter measurement of cases that include the abdominal aorta (M-AbdAo). BriefCase-Quantification is indicated to evaluate normal and aneurysmal abdominal aortas and is not intended to evaluate post-operative aortas.</OutcomesAndOutputs>
+			<ModelType>Custom-built 3D deep convolutional neural network.</ModelType>
+			<InputDataSource>The BriefCase-Quantification imaging AI solutions are trained, tuned, and validated using diverse data sets. Specifically, Aidoc works with DICOM images, which capture anatomical and physiological data from medical imaging technologies like CT scans and X-rays. These data sets are sourced from a wide range of institutions, including community hospitals, academic centers, teleradiology providers, private clinics, and imaging centers across various global regions (e.g., east and west US, central US, EU, and other parts of the world).</InputDataSource>
+			<OutputAndInputDataTypes>Input: Real World Digital imaging and communications in medicine (DICOM) images.
+
+Inclusion criteria: CT scans with contrast that include the abdominal aorta. Performed on CT scanners with 64 or greater number of detectors. Scans performed on adults/transitional adults ≥ 18 years of age. Slice thickness; 0.6 mm - 5.0 mm axial slices
+
+Exclusion Criteria: Delayed contrast studies.
+
+Output: The BriefCase-Quantification output consists of the measurements necessary to create the Preview Image. These are created and displayed by an Image Communication Platform. The Preview Image display the slice with the maximal aortic diameter.</OutputAndInputDataTypes>
+			<DevelopmentDataCharacterization>The Abdominal Aortic Measurement model has been trained, tuned, and validated on over 32,000 scans.
+
+The training and validation populations consist of a wide range of institutions and patient settings, including academic centers, community hospitals, teleradiology providers, private imaging centers, and clinics worldwide (specifically East, West, and Center of US, EU, Middle East, Oceania, Latin America and far east).
+
+Analyzed data included key demographic elements such as age, gender, comorbidities, geographical location, patient settings, reason for exam, and technological characteristics (e.g., equipment manufacturer, slice thickness, and modality model distribution).
+
+The time frame for the data used for the initial and retrained model construction and validation is 2022-2023.</DevelopmentDataCharacterization>
+			<BiasMitigationApproaches>Aidoc's AI solutions undergo rigorous training, validation, and monitoring to ensure robust and equitable performance across diverse patient populations. Bias mitigation and advancing care equity are highly prioritized throughout the design and development of Aidoc solutions, while working within the known constraints of limited accessibility to certain data elements.
+
+Recognizing these constraints, Aidoc creates proxies to effectively mitigate risks associated with the absence of certain demographic details, when applicable.
+
+Specifically, race, ethnicity, language, sexual orientation, gender identity, social determinants of health data, and health status assessment data are not accessible as part of the DICOM image.
+
+To address potential biases, Aidoc employs diverse data sets from a wide range of institutions and patient settings, including academic centers, community hospitals, teleradiology providers, private imaging centers, and clinics worldwide (specifically East, West, and Center of US, EU, Middle East, Oceania, Latin America and far east).
+
+Aidoc validates and measures the AI model across subpopulations to ensure a normal and predictable performance on them. Additionally, key demographic elements are analyzed such as age, gender, comorbidities, geographical location, patient settings, reason for exam, and technological characteristics (e.g., equipment manufacturer, slice thickness, and modality model distribution);
+
+Furthermore, Aidoc conducts multiple retraining throughout the lifecycle of each AI module to ensure increased generalizability across all the aforementioned parameters. While the exact size of Aidoc's training data sets is proprietary, over the model lifecycle, they may include up to millions of DICOM studies.</BiasMitigationApproaches>
+			<OngoingMaintenance>Aidoc's quality management system is ISO 13485 MDSAP and EU MDR certified, and 21 CFR Part 820 compliant, requiring structured and validated installation, servicing, and Post-Market Surveillance (PMS) activities.
+
+Specifically, Aidoc's PMS plan outlines the systematic collection and analysis of data regarding the device's safety and performance throughout its lifecycle.
+
+Data analysis methods, both qualitative and quantitative, are applied to the collected data. The results are documented in a PMS report and in a Periodic Safety Update Report (PSUR). In addition, Aidoc implements site-specific controls, ensuring high standards are consistently maintained across all operational locations. The current Malpositioned Endotracheal Tube model represents the first FDA clearance for Malpositioned Endotracheal Tube at Aidoc. Aidoc periodically retrains the algorithm on additional data and subjects the retrained versions to the required regulatory review and controls.
+
+An expanded dataset enhances the model's generalization capabilities and potentially elevates the product's performance (improved or non-inferior to the previously cleared device's Time-to-Notification and/or AUC). The inclusion of data from a broader and more diverse array of sources enhances the model's ability to perform effectively across a wider range of clinical and technical settings, particularly if any real-world data changes or if any data was underrepresented in the original dataset.
+
+**Continuous monitoring**: As detailed in the previous answer, Aidoc has robust monitoring systems in place to track the AI performance and identify any emerging issues, such as AI drift. In addition, regular audits and assessments ensure the model continues to deliver fair and accurate prioritizations.
+
+Furthermore, Aidoc remains committed to ongoing research and development to refine the AI and address any safety concerns that may arise. The Aidoc AI Monitoring team monitors algorithm performance 24/7 for the purpose of mitigating AI drift. The team monitors and considers aspects such as alert correctness, the timeliness of data available, data completeness, slice thickness, series correctness and relevancy, contrast phase, algorithm specificity, and algorithmic positive ratio.</OngoingMaintenance>
+			<Security>Aidoc's products are structured based on international quality, privacy, and security standards and frameworks, including ISO 13485, ISO 27001, ISO 27017, ISO 27018, ISO 27799, SOC 2 Type 2, Cyber Essentials, and C5. Aidoc follows a systematic approach, integrating these frameworks into Aidoc's Information Security Management System (ISMS) to ensure a holistic and proactive risk management strategy.
+
+Aidoc's risk management program involves regular risk assessments, leveraging common methodologies, to identify, evaluate, and prioritize risks. Continuous monitoring, periodic audits, and assessments contribute to the dynamic nature of Aidoc's risk management program, allowing us to adapt to evolving threats and vulnerabilities. Aidoc regularly monitors its server's logs for unusual activity and implements intrusion detection and prevention systems, paying attention to unusual or suspicious activities such as unexpected errors, system slowdowns, or strange user access patterns. Furthermore, Aidoc conducts multiple retraining throughout the lifecycle of each AI module.
+
+Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsible for enterprise oversight and direction for all security governance activities; governance for risk-related activities including Risk Identification, Management, Mitigation, and Remediation, and Risk Assessments; and responsibility for the planning, execution, and adherence with Aidoc Security Policies and Procedures, legal, regulatory, and contractual requirements.</Security>
+			<Transparency>The company ensures Transparency, Intelligibility, and Accountability in Aidoc's medical devices via its product design and its Quality Management System (QMS). Some examples include (non-exhaustive list):
+- Explainability and transparency features by design;
+- Reporting and feedback mechanism directly via the device's UI and additional communication in different platforms;
+- User guide, labeling, and additional tutorial materials are available electronically at all times via the user community;
+- Robust user training.</Transparency>
+		</AISystemFacts>
+		<TransparencyInformation>
+			<FundingSource>Aidoc's model creation is self-funded.</FundingSource>
+			<StakeholdersConsulted>Physicians, health system administrators, and patient groups were engaged in the development of the model</StakeholdersConsulted>
+		</TransparencyInformation>
+	</TrustIngredients>
+	<KeyMetrics>
+		<UsefulnessUsabilityEfficacy>
+			<MetricGoal>To evaluate the software's performance in providing quantitative maximum abdominal aortic diameter measurement of cases that include the abdominal aorta in CT scans that include the abdominal aorta in 162 cases from 6 clinical sites in the US, both academic and community, compared to the ground truth, as determined by three US board-certified radiologists.</MetricGoal>
+			<Result>The algorithm performance showed that the mean absolute error between the ground truth measurement and algorithm was 1.52 mm (95% CI: 1.20 mm, 1.83 mm).</Result>
+			<Interpretation>Because the mean absolute error estimate was below the prespecified performance goal, the study's primary endpoint was achieved.</Interpretation>
+			<TestType>Retrospective, blinded, multicenter study.</TestType>
+			<TestingDataDescription>The reported similar mean absolute error [the subject device: 1.52 mm (95% CI: 1.20 mm, 1.83 mm); the predicate device: 1.95 mm (95% CI: 1.59 mm, 2.32 mm)] demonstrates comparable performance. The mean age of patients whose scans were reviewed for BriefCase-Quantification of the Abdominal Aortic Measurement was 62.8 years, with a standard deviation of 19.6 years. Gender distribution was 46.9% male, and 53.1% female. None of the potential covariates demonstrated statistical significance, thus, device performance did not meaningfully interact with location, gender or age.</TestingDataDescription>
+			<ValidationProcessAndJustification>Methods used are described in the [510(k) summary](https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241112.pdf).</ValidationProcessAndJustification>
+		</UsefulnessUsabilityEfficacy>
+		<FairnessEquity>
+			<MetricGoal>Evaluate for differences in performance (agreement) based on available socio-demographic variables of age, location and gender.</MetricGoal>
+			<Result>Device performance did not meaningfully interact with location, gender or age (Race distribution for sample was unavailable).</Result>
+			<Interpretation>Device performance did not meaningfully interact with location, gender or age (Race distribution for sample was unavailable).</Interpretation>
+			<TestType>Retrospective, blinded, multicenter study</TestType>
+			<TestingDataDescription>Same study as Usefulness, Usability, and Efficacy section.</TestingDataDescription>
+			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241112.pdf)</ValidationProcessAndJustification>
+		</FairnessEquity>
+		<SafetyReliability>
+			<MetricGoal>To show an agreement between the ground truth compared to the algorithm output by ordinal measurement category.</MetricGoal>
+			<Result>The mean difference between the ground truth compared to the algorithm output is 0.58 mm, indicating that there is little to no bias between the two measurements.</Result>
+			<Interpretation>The mean difference between the ground truth compared to the algorithm output is 0.58 mm, indicating that there is little to no bias between the two measurements, demonstrating the study's secondary endpoint was achieved.</Interpretation>
+			<TestType>Retrospective, blinded, multicenter study</TestType>
+			<TestingDataDescription>Same study as Usefulness, Usability, and Efficacy section.</TestingDataDescription>
+			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf24/K241112.pdf)
+
+AiDoc develops software within a Design Control process that is aligned with FDA 21 CFR Part 820 and ISO 62304 Medical device software - Software life cycle processes.</ValidationProcessAndJustification>
+		</SafetyReliability>
+	</KeyMetrics>
+	<Resources>
+		<EvaluationReferences>Please reference our clinical [compendium](https://www.aidoc.com/learn/ebooks-whitepapers/aidoc-clinical-compendium/).</EvaluationReferences>
+		<PeerReviewedPublications>Aidoc's clinical compendium with 100+ Peer-reviewed publications or abstract/conference presentations are available at the following [link](https://www.aidoc.com/learn/ebooks-whitepapers/aidoc-clinical-compendium/).</PeerReviewedPublications>
+		<PatientConsentOrDisclosure>N/A</PatientConsentOrDisclosure>
+	</Resources>
+	<Bibliography />
+</AppliedModelCard>

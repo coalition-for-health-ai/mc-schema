@@ -8,27 +8,27 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 	xmlns="https://mc.chai.org/v0.1/schema.xsd"
 	xmlns:bibtex="http://bibtexml.sf.net/">
 	<BasicInfo>
-		<ModelName>BriefCase-Triage for Intracranial Hemorrhage (ICH)</ModelName>
+		<ModelName>BriefCase-Triage for Vessel Occlusion</ModelName>
 		<ModelDeveloper>Aidoc</ModelDeveloper>
 		<DeveloperContact>www.aidoc.com/contact-support/ or email:info@aidoc.com</DeveloperContact>
 	</BasicInfo>
 	<ReleaseInfo>
-		<ReleaseStage>FDA Cleared, Commercial (K221240)</ReleaseStage>
-		<ReleaseDate>May 2022</ReleaseDate>
-		<ReleaseVersion>ICH-02-RT</ReleaseVersion>
+		<ReleaseStage>FDA Cleared, Commercial (K220709)</ReleaseStage>
+		<ReleaseDate>October 2022</ReleaseDate>
+		<ReleaseVersion>VO-01</ReleaseVersion>
 		<GlobalAvailability>US, EU (CE Marked), UK (UKCA Marked), Canada (MDEL), Australia (ARTG), New Zealand, Israel (AMAR), UAE and South Africa.</GlobalAvailability>
-		<RegulatoryApproval>Please find attached the ICH-02-RT [510(k) summary](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221240).</RegulatoryApproval>
+		<RegulatoryApproval>Please find attached the VO-01 [510(k) summary](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K220709).</RegulatoryApproval>
 	</ReleaseInfo>
 	<ModelSummary>
-		<Summary>The ICH solution is a radiological computer-aided triage and notification software indicated for use in the analysis of non-enhanced head CT images in adults aged 18 and older. The device is intended to assist hospital networks and appropriately trained medical specialists in workflow triage by flagging and communicating suspected positive findings of Intracranial hemorrhage (ICH) pathologies. The ICH solution uses an artificial intelligence algorithm to analyze images and highlight cases with detected findings on a standalone desktop application in parallel to the ongoing standard of care image interpretation. When suspected findings are detected, users receive notifications that include compressed preview images. These previews are for informational purposes only and are not intended for diagnostic use beyond the initial notification. The results of the ICH solution are intended to be used in conjunction with other patient information and based on their professional judgment, to assist with triage/prioritization of medical images. Ultimately, notified clinicians are responsible for viewing full images per the standard of care.</Summary>
+		<Summary>The Vessel Occlusion solution is a radiological computer aided triage and notification software indicated for use in the analysis of head CTA images in adults or transitional adolescents aged 18 and older. The device is intended to assist hospital networks and appropriately trained medical specialists in workflow triage by flagging and communication of suspected positive findings of complete Large Vessel Occlusion (LVO) - MCA-M1, PCA-P1, ACA-A1, ICA, Basilar; and Medium Vessel Occlusions (MeVO) - MCA-M2, MCA-proximal M3, PCA-P2, PCA-proximal P3, ACA-A2, ACA-proximal A3, and Vertebral-V4. The Vessel Occlusion solution uses an artificial intelligence algorithm to analyze images and highlight cases with detected findings on a standalone desktop application in parallel to the ongoing standard of care image interpretation. The user is presented with notifications for cases with suspected findings. Notifications include compressed preview images that are meant for informational purposes only and not intended for diagnostic use beyond notification. The device does not alter the original medical image and is not intended to be used as a diagnostic device. The results of The Vessel Occlusion solution are intended to be used in conjunction with other patient information and based on their professional judgment, to assist with triage/prioritization of medical images. Notified clinicians are responsible for viewing full images per the standard of care.</Summary>
 		<Keywords />
 	</ModelSummary>
 	<UsesAndDirections>
-		<IntendedUseAndWorkflow>The device is intended to assist hospital networks and appropriately trained medical specialists in workflow triage by flagging and communicating suspected positive findings of Intracranial hemorrhage (ICH) pathologies.</IntendedUseAndWorkflow>
-		<PrimaryIntendedUsers>The BriefCase-Triage is intended to be used by appropriately trained medical specialists. Appropriately trained medical specialists for ICH are: Emergency physicians, radiologists, neuro-surgeons, neuro-interventionalists, interventional radiologists, and neuro-intensive care physicians.</PrimaryIntendedUsers>
-		<HowToUse>The user is presented with notification for cases with suspected findings. Notifications include compressed preview images that are meant for informational purposes only and not intended for diagnostic use beyond notification. The results of the ICH solution are intended to be used in conjunction with other patient information and based on their professional judgment, to assist with triage/prioritization of medical images.</HowToUse>
+		<IntendedUseAndWorkflow>The device is intended to assist hospital networks and appropriately trained medical specialists in workflow triage by flagging and communicating suspected positive cases of Large Vessel Occlusion (LVO) - MCA-M1, PCA-P1, ACA-A1, ICA, Basilar; and Medium Vessel Occlusions (MeVO) - MCA-M2, MCA-proximal M3, PCA-P2, PCA-proximal P3, ACA-A2, ACA-proximal A3, and Vertebral-V4. pathologies.</IntendedUseAndWorkflow>
+		<PrimaryIntendedUsers>The Vessel Occlusion solution is intended to be used by appropriately trained medical specialists. Appropriately trained medical specialists for VO are emergency physicians, radiologists, neurologists, neuro-surgeons, neuro-interventionalists, interventional radiologists, neuro-intensive care physicians.</PrimaryIntendedUsers>
+		<HowToUse>The user is presented with notifications for cases with suspected findings. Notifications include compressed preview images that are meant for informational purposes only and not intended for diagnostic use beyond notification. The desktop application feed displays all incoming suspect cases, each notified case in a line. Hovering over a line in the feed pops up a compressed, low-quality, grayscale, unannotated image that is captioned "not for diagnostic use" and is displayed as a preview function. This compressed preview is meant for informational purposes only, does not contain any marking of the findings, and is not intended for primary diagnosis beyond notification. The device does not alter the original medical image and is not intended to be used as a diagnostic device.</HowToUse>
 		<TargetedPatientPopulation>patients Adults or transitional adolescents aged 18 and older.</TargetedPatientPopulation>
-		<CautionedOutOfScopeSettings>Only for use in workflow triage, and only for use by appropriately trained medical specialists. Please refer to BriefCase-Triage User Guide ([UG0009](https://community.aidoc.com/private/login)) for further information on warnings and precautions.</CautionedOutOfScopeSettings>
+		<CautionedOutOfScopeSettings>Notifications include compressed preview images that are meant for informational purposes only and not intended for diagnostic use beyond notification. The device does not alter the original medical image and is not intended to be used as a diagnostic device. Only for use in workflow triage, and only for use by appropriately trained medical specialists. Please refer to BriefCase-Triage User Guide ([UG0009](https://community.aidoc.com/private/login)) for further information on warnings and precautions.</CautionedOutOfScopeSettings>
 	</UsesAndDirections>
 	<Warnings>
 		<KnownRisksAndLimitations>Notified clinicians are responsible for viewing full images per the standard of care. Please refer to BriefCase-Triage User Guide ([UG0009](https://community.aidoc.com/private/login)), label, and additional tutorial materials provided by the company for further information on risks and limitations.</KnownRisksAndLimitations>
@@ -37,21 +37,23 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 	</Warnings>
 	<TrustIngredients>
 		<AISystemFacts>
-			<OutcomesAndOutputs>Binary notification of suspected ICH cases. The desktop application feed displays incoming suspect cases. Hovering over the feed pops up a compressed, unannotated image that is captioned "not for diagnostic use." The radiologist prioritizes cases based on this additional info and reads the case as per standard of care.</OutcomesAndOutputs>
+			<OutcomesAndOutputs>Binary notification of suspected vessel occlusion cases. The desktop application feed displays incoming suspect cases. Hovering over the feed pops up a compressed, unannotated image that is captioned "not for diagnostic use." The radiologist prioritizes cases based on this additional info and reads the case as per standard of care.</OutcomesAndOutputs>
 			<ModelType>Custom-built 3D deep convolutional neural network.</ModelType>
 			<InputDataSource>The BriefCase-Triage imaging AI solutions are trained, tuned, and validated using diverse data sets. Specifically, Aidoc works with DICOM images, which capture anatomical and physiological data from medical imaging technologies like CT scans and X-rays. These data sets are sourced from a wide range of institutions, including community hospitals, academic centers, teleradiology providers, private clinics, and imaging centers across various global regions (e.g., east and west US, central US, EU, and other parts of the world).</InputDataSource>
-			<OutputAndInputDataTypes>Input: Real World Digital imaging and communications in medicine (DICOM) images.
+			<OutputAndInputDataTypes>Real World Digital imaging and communications in medicine (DICOM) images.
 
-Inclusion criteria: Non-enhanced head or neck CT protocol with a 64-slice scanner or higher. Scans performed on adults/transitional adults ≥ 18 years of age. Slice thickness 0.625 mm - 5.0 mm.
+Inclusion criteria: Head CT scans. Scans performed on CT scanners with 64 or greater number of detectors. Scans performed on adults/transitional adults ≥ 18 years of age. Slice thickness 0.5 mm - 1.25 mm.
 
-Exclusion Criteria: All scans that are technically inadequate, including motion artifacts, severe metal artifacts, suboptimal bolus timing or an inadequate field of view.
+Exclusion Criteria: All studies that are technically inadequate, such as severe metal artifacts, or inadequate field of view.
 
-Output: Binary notification of suspected ICH cases.</OutputAndInputDataTypes>
-			<DevelopmentDataCharacterization>The ICH model has been trained, tuned, and validated on over 10,000 scans. The training and validation populations consist of a wide range of institutions and patient settings, including academic centers, community hospitals, teleradiology providers, private imaging centers, and clinics worldwide (specifically East, West, and Center of US, EU, Middle East, Oceania, Latin America and far east).
+Output: Binary notification of suspected cases of vessel occlusions.</OutputAndInputDataTypes>
+			<DevelopmentDataCharacterization>The Vessel Occlusion model has been trained, tuned, and validated on over 6,000 scans.
+
+The training and validation populations consist of a wide range of institutions and patient settings, including academic centers, community hospitals, teleradiology providers, private imaging centers, and clinics worldwide (specifically East, West, and Center of US, EU, Middle East, Oceania, Latin America and far east).
 
 Analyzed data included key demographic elements such as age, gender, comorbidities, geographical location, patient settings, reason for exam, and technological characteristics (e.g., equipment manufacturer, slice thickness, and modality model distribution).
 
-The time frame for the data used for the initial and retrained model construction and validation is 2015-2022.</DevelopmentDataCharacterization>
+The time frame for the data used for the initial and retrained model construction and validation is 2020-2024.</DevelopmentDataCharacterization>
 			<BiasMitigationApproaches>Aidoc's AI solutions undergo rigorous training, validation, and monitoring to ensure robust and equitable performance across diverse patient populations. Bias mitigation and advancing care equity are highly prioritized throughout the design and development of Aidoc solutions, while working within the known constraints of limited accessibility to certain data elements.
 
 Recognizing these constraints, Aidoc creates proxies to effectively mitigate risks associated with the absence of certain demographic details, when applicable.
@@ -67,7 +69,7 @@ Furthermore, Aidoc conducts multiple retraining throughout the lifecycle of each
 
 Specifically, Aidoc's PMS plan outlines the systematic collection and analysis of data regarding the device's safety and performance throughout its lifecycle.
 
-Data analysis methods, both qualitative and quantitative, are applied to the collected data. The results are documented in a PMS report and in a Periodic Safety Update Report (PSUR). In addition, Aidoc implements site-specific controls, ensuring high standards are consistently maintained across all operational locations. The current ICH model represents the second FDA clearance for ICH at Aidoc. Aidoc periodically retrains the algorithm on additional data and subjects the retrained versions to the required regulatory review and controls.
+Data analysis methods, both qualitative and quantitative, are applied to the collected data. The results are documented in a PMS report and in a Periodic Safety Update Report (PSUR). In addition, Aidoc implements site-specific controls, ensuring high standards are consistently maintained across all operational locations. The current Vessel Occlusion model represents the first FDA clearance for Vertebral Compression Fracture at Aidoc. Aidoc periodically retrains the algorithm on additional data and subjects the retrained versions to the required regulatory review and controls.
 
 An expanded dataset enhances the model's generalization capabilities and potentially elevates the product's performance (improved or non-inferior to the previously cleared device's Time-to-Notification and/or AUC). The inclusion of data from a broader and more diverse array of sources enhances the model's ability to perform effectively across a wider range of clinical and technical settings, particularly if any real-world data changes or if any data was underrepresented in the original dataset.
 
@@ -92,28 +94,28 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 	</TrustIngredients>
 	<KeyMetrics>
 		<UsefulnessUsabilityEfficacy>
-			<MetricGoal>Evaluate the software's performance in identifying non-contrast head CT images containing intracranial hemorrhage (ICH) in 220 cases from 5 US-based clinical sites.</MetricGoal>
-			<Result>Sensitivity was 96.15% (95% CI: 90.44%, 98.94%) and specificity was 94.83% (95% CI: 89.08%, 98.08%).</Result>
-			<Interpretation>Primary endpoints of sensitivity and specificity with an 80% performance goal were met. Secondary endpoints were BriefCase time-to-notification compared to the predicate device, Positive Predictive Value (PPV), Negative Predictive Value (NPV), Positive Likelihood Ratio (PLR), and Negative Likelihood Ratio (NLR).</Interpretation>
+			<MetricGoal>Evaluate the software's performance in identifying head CTA images containing Vessel Occlusion (VO) in 342 cases from 5 US-based clinical sites.</MetricGoal>
+			<Result>Sensitivity and specificity exceeded the 80% performance goal. Sensitivity was 91.3% (95% CI: 83.6%, 96.2%) and specificity was 85.6% (95% CI: 80.6%, 89.7%).</Result>
+			<Interpretation>Primary endpoints of sensitivity and specificity with an 80% performance goal were met.</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study.</TestType>
-			<TestingDataDescription>The mean age of patients whose scans were reviewed in the study was 65.1 years, with standard deviation of 18.8 years. Gender distribution was 49.8% male, and 50.2% female. Race distribution within the study data patient population was unavailable. None of the potential covariates demonstrated statistical significance, thus, device performance did not meaningfully interact with location, gender or age.</TestingDataDescription>
-			<ValidationProcessAndJustification>Methods used are described in the [510(k) summary](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K221240), pages 7-9.</ValidationProcessAndJustification>
+			<TestingDataDescription>The mean age of patients whose scans were reviewed for VO was 64.8 years, with standard deviation of 17.1 years. Gender distribution was 42.4% male, and 56.4% female. Race distribution within the study data patient population was unavailable. None of the potential covariates demonstrated statistical significance, thus, device performance did not meaningfully interact with location, gender or age.</TestingDataDescription>
+			<ValidationProcessAndJustification>Methods used are described in the [510(k) summary](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpmn/pmn.cfm?ID=K220709).</ValidationProcessAndJustification>
 		</UsefulnessUsabilityEfficacy>
 		<FairnessEquity>
 			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender.</MetricGoal>
 			<Result>No statistically significant interaction between performance and age, gender, or location.</Result>
 			<Interpretation>Device performance did not meaningfully interact with location, gender or age (Race distribution for sample was unavailable).</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study</TestType>
-			<TestingDataDescription>The mean age of patients whose scans were reviewed in the study was 65.1 years, with standard deviation of 18.8 years. Gender distribution was 49.8% male, and 50.2% female. Race distribution within the study data patient population was unavailable.</TestingDataDescription>
-			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221240.pdf)</ValidationProcessAndJustification>
+			<TestingDataDescription>In the pivotal study from the most recent FDA clearance, the mean age of patients whose scans were reviewed for VO was 64.8 years, with standard deviation of 17.1 years. Gender distribution was 42.4% male, and 56.4% female</TestingDataDescription>
+			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf22/K220709.pdf)</ValidationProcessAndJustification>
 		</FairnessEquity>
 		<SafetyReliability>
 			<MetricGoal>The time-to-notification metric observed for the BriefCase software in the five medical centers was compared to the equivalent metric of prior predicate devices.</MetricGoal>
-			<Result>Mean Time to Notification (sec) Predicate K203505 = 267.6, 95% CI = 246.0-289.5. Mean Time to Notification (sec) Briefcase = 33.5, 95% CI = 30.9-36.1</Result>
+			<Result>The BriefCase mean time-to-notification for VO was 2.23 minutes (95% CI: 2.22-2.23).</Result>
 			<Interpretation>The time-to-notification results obtained for the subject BriefCase device showed improvement with regard to time savings to the standard of care review.</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study</TestType>
 			<TestingDataDescription>The BriefCase time-to-notification includes the time to get the DICOM exam, de-identify it, upload it to the cloud, analyze and send a notification on a positive suspect case back to the desktop application. The BriefCase time-to-notification was measured for all True Positive cases (i.e., identified as positive both by the reviewers as well as the BriefCase device).</TestingDataDescription>
-			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf22/K221240.pdf)
+			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf22/K220709.pdf)
 
 AiDoc develops software within a Design Control process that is aligned with FDA 21 CFR Part 820 and ISO 62304 Medical device software - Software life cycle processes.</ValidationProcessAndJustification>
 		</SafetyReliability>
