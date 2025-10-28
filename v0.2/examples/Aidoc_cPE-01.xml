@@ -111,7 +111,7 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 			<ValidationProcessAndJustification>Methods used are described in the [510(k) summary](https://www.accessdata.fda.gov/cdrh_docs/pdf23/K232751.pdf).</ValidationProcessAndJustification>
 		</UsefulnessUsabilityEfficacy>
 		<FairnessEquity>
-			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender. Goal of metric: The time-to-notification metric observed for the BriefCase software in the five medical centers was compared to the</MetricGoal>
+			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender.</MetricGoal>
 			<Results>
 				<MetricResult>
 					<Label>Demographics availability</Label>
