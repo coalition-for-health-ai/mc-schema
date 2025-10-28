@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2024 Coalition for Health AI, Inc.
+
+The license for this source code can be found at https://mc.chai.org/LICENSE.
+-->
+<AppliedModelCard xmlns="https://mc.chai.org/v0.1/schema.xsd">
+	<BasicInfo>
+		<ModelName>Prior Authorization</ModelName>
+		<ModelDeveloper>Penguin AI</ModelDeveloper>
+		<DeveloperContact>fawad@penguinai.co</DeveloperContact>
+	</BasicInfo>
+	<ReleaseInfo>
+		<ReleaseStage>In-Production</ReleaseStage>
+		<ReleaseDate>08/23/2024</ReleaseDate>
+		<ReleaseVersion>V1</ReleaseVersion>
+		<GlobalAvailability>United States of America</GlobalAvailability>
+	</ReleaseInfo>
+	<ModelSummary>
+		<Summary>Prior Authorization (PA) Small Language Model (SLM) is designed to assist SMEs while adjudicating/ submitting a PA request. The model is designed to re-imagine the PA decision-making process and make it quicker and more transparent. It incorporates human-in-the-loop feedback mechanisms from SMEs for continuous improvement and accuracy enhancement.</Summary>
+		<Keywords />
+	</ModelSummary>
+	<UsesAndDirections>
+		<IntendedUseAndWorkflow>&#x200B;
+- The solution is intended to augment payer PA back-office operations teams in getting their work done faster or in reducing PA denials for providers. The SLM automatically analyzes submitted documents and highlights specific sections containing relevant evidence, eliminating the need to read through all pages of documentation. This targeted approach substantially reduces review time and administrative burden.
+- Additionally, the system provides valuable predictive capabilities at the point of submission, alerting submitting physicians about the probability of request approval
+- The solution addresses PA requests by analyzing structured and unstructured data and supporting documentation</IntendedUseAndWorkflow>
+		<PrimaryIntendedUsers>&#x200B;
+- Healthcare professionals involved in prior authorization processes
+- Users should have familiarity with prior authorization procedures, patient documentation and clinical guidelines such as Milliman, InterQual etc.</PrimaryIntendedUsers>
+		<HowToUse>Our proprietary SLM model comes ready to deploy out-of-the-box, delivering immediate value with minimal setup. For organizations seeking a personalized touch, users can fine-tune the model on their data while maintaining complete data privacy and ownership. Whether you choose the base model, a custom-tuned version, or the full Digital Worker solution, everything is accessible through secure API endpoints in our HIPAA-compliant Penguin platform.</HowToUse>
+		<TargetedPatientPopulation>General patient population requiring PA for healthcare services. No specific exclusion criteria based on demographic factors</TargetedPatientPopulation>
+		<CautionedOutOfScopeSettings>Not intended for decision-making without human review and should not be used as the sole basis for prior authorization decisions. Also, any changes in medical guidelines and criteria has to be updated on a regular basis</CautionedOutOfScopeSettings>
+	</UsesAndDirections>
+	<Warnings>
+		<KnownRisksAndLimitations>&#x200B;
+- Accuracy of the model improves with usage
+- Places high weightage to human input during RLHF
+- Performance dependent on quality of OCR of input clinical notes
+- May not capture rare or unusual clinical scenarios</KnownRisksAndLimitations>
+		<KnownBiasesOrEthicalConsiderations>Potential data biases inherited from training data</KnownBiasesOrEthicalConsiderations>
+		<ClinicalRiskLevel>Low</ClinicalRiskLevel>
+	</Warnings>
+	<TrustIngredients>
+		<AISystemFacts>
+			<OutcomesAndOutputs>&#x200B;
+
+Outcomes:
+- Identify medical evidence according to guidelines to approve or deny a PA request
+- Reduces admin burden by bringing down the time to review documents
+- Highlight missing information at the point of submission to reduce PA denials
+
+Outputs:
+- Decision such as Approve, Deny &amp; pending state
+- Explainability - Why the request is approved or denied
+- Traceability of the decision back to the submitted documentation</OutcomesAndOutputs>
+			<ModelType>GPT model; Sentence transformers; Re-ranking models; Semantic chunking algorithms</ModelType>
+			<FoundationModels>Llama3</FoundationModels>
+			<InputDataSource>Data related to real world Prior Authorizations was used to train the model</InputDataSource>
+			<OutputAndInputDataTypes>Clinical notes and documentation, delivered as Unstructured and Structured Data</OutputAndInputDataTypes>
+			<DevelopmentDataCharacterization>&#x200B;
+- Data related to real world Prior Authorizations was used to train the model
+- Supplementary synthetic data was generated and validated by SMEs</DevelopmentDataCharacterization>
+			<BiasMitigationApproaches>&#x200B;
+- Input data assessment
+- PII redaction to reduce the impact of certain demographics on model output
+- Data governance by having input data reviewers from business, compliance &amp; tech teams
+- Mitigating input data bias by identifying rows/ annotations that are not congruent (to the Prior Authorization task)
+- Measurement of model bias on validation datasets
+- Medical Director review of data &amp; model to ensure clinical appropriateness
+- Leveling data issues with under-represented demographics
+- Continuous monitoring of model accuracy on different demographics on real-world production data</BiasMitigationApproaches>
+			<OngoingMaintenance>&#x200B;
+- Continuous feedback collection from SMEs to implement RLHF
+- Regular model fine-tuning based on collected feedback
+- Performance monitoring to measure human machine congruence
+- Metrics to measure human engagement within the workflow
+- Training of the scenarios/ broad themes where the model is failing</OngoingMaintenance>
+			<Security>&#x200B;
+- **Accreditation**: HIPAA compliance, SOC-2 compliance, Hi-Trust compliance
+- **Security and Compliance Practices**:
+  1. Robust Data Protection mechanism including data encryption at rest and in transit using industry-standard protocols.
+  2. Multi-tenant architecture is crucial for proper client data segregation, supplemented by strict access controls and identity management.
+  3. Network security should implement segmentation, zero-trust architecture, and multiple security layers including VPNs, firewalls, and intrusion detection systems.</Security>
+			<Transparency>&#x200B;
+- Human-in-the-loop review process
+- Documented feedback collection and incorporation
+- Model outputs not just the decision but also the reason (supporting evidence within the document) for the decision</Transparency>
+		</AISystemFacts>
+		<TransparencyInformation>
+			<FundingSource>Penguin AI</FundingSource>
+			<StakeholdersConsulted>Medical Director, Nurses</StakeholdersConsulted>
+		</TransparencyInformation>
+	</TrustIngredients>
+	<KeyMetrics>
+		<UsefulnessUsabilityEfficacy>
+			<MetricGoal>To evaluate the model's practical effectiveness in Prior Authorization processing through comprehensive assessment of data quality, model performance, and task-specific capabilities.</MetricGoal>
+			<Results>
+				<MetricResult>
+					<Label>Sensitivity</Label>
+					<ValueJson>{"kind":"single","value":92.13,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Specificity</Label>
+					<ValueJson>{"kind":"single","value":91.17,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Data Completeness</Label>
+					<ValueJson>{"kind":"single","value":100,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Unique Record Rate</Label>
+					<ValueJson>{"kind":"single","value":100,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Task Relevancy</Label>
+					<ValueJson>{"kind":"single","value":100,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Data Efficacy</Label>
+					<ValueJson>{"kind":"single","value":80,"unit":"%"}</ValueJson>
+				</MetricResult>
+			</Results>
+			<Interpretation>Following metrics are measured: Data Completeness (proportion of complete fields), Unique Record Rate (proportion of unique records), Task Relevancy (alignment of input to task), Data Efficacy (degree output contains information present in or relevant to input).</Interpretation>
+			<TestType>&#x200B;
+- Question accuracy rate
+- Top-N Context relevance
+</TestType>
+			<TestingDataDescription>
+&#x200B;
+- Historical Prior Authorization requests
+- Synthetic edge cases and boundary conditions
+- Multi-payer authorization scenarios
+- Diverse medical specialty cases
+- Real-world denial/approval patterns
+- Out-of-scope query samples</TestingDataDescription>
+			<ValidationProcessAndJustification>
+Three-stage validation process:
+- Automated testing against ground truth
+- Clinical expert review of outputs
+- Integration testing in sandbox environments</ValidationProcessAndJustification>
+		</UsefulnessUsabilityEfficacy>
+		<FairnessEquity>
+			<MetricGoal>To ensure equitable model performance across diverse demographic groups, medical conditions, and healthcare scenarios while maintaining consistent accuracy and fairness.</MetricGoal>
+			<Results>
+				<MetricResult>
+					<Label>Overall Category Score</Label>
+					<ValueJson>{"kind":"single","value":89,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Bias Mitigation Score</Label>
+					<ValueJson>{"kind":"single","value":99,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Criteria Fulfillment Rate</Label>
+					<ValueJson>{"kind":"single","value":99,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Demographic Parity</Label>
+					<ValueJson>{"kind":"single","value":87,"unit":"%"}</ValueJson>
+				</MetricResult>
+			</Results>
+			<Interpretation>&#x200B;
+
+Bias Mitigation Score: The degree to which the distribution of demographic attributes in the dataset aligns with the target distribution
+
+Criteria Fulfillment Rate: Users would provide the list of criteria against which data should be evaluated to check whether it satisfies all conditions</Interpretation>
+			<TestType>Comprehensive fairness assessment including:
+- Bias detection and measurement
+- Cross-demographic performance analysis
+- Multi-stakeholder equity evaluation
+- Fairness criteria compliance testing</TestType>
+			<TestingDataDescription>Specialized dataset incorporating:
+- Demographically diverse patient populations
+- Multiple insurance types and plans
+- Various healthcare provider settings
+- Different geographic regions
+- Range of medical conditions</TestingDataDescription>
+			<ValidationProcessAndJustification>&#x200B;
+- Statistical fairness testing
+- Demographic representation analysis
+- Performance equity verification
+- Regular bias monitoring and reporting
+- Independent fairness audits
+- Stakeholder feedback integration</ValidationProcessAndJustification>
+		</FairnessEquity>
+		<SafetyReliability>
+			<MetricGoal>To verify model safety, reliability, and compliance with healthcare standards while ensuring consistent and appropriate outputs across all operational conditions</MetricGoal>
+			<Results>
+				<MetricResult>
+					<Label>Overall Category Score</Label>
+					<ValueJson>{"kind":"single","value":99,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Safety Compliance Rate</Label>
+					<ValueJson>{"kind":"single","value":100,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Model Safety Score</Label>
+					<ValueJson>{"kind":"single","value":99,"unit":"%"}</ValueJson>
+				</MetricResult>
+			</Results>
+			<Interpretation>&#x200B;
+
+**Safety Compliance Rate**: The proportion of inputs in the training data that are deemed safe and appropriate</Interpretation>
+			<TestType>Safety assessment protocol:
+
+**Model safety testing**:
+- Prompt injection
+- Document engineering
+
+**Reliability testing**:
+- Reproducibility
+- Error handling validation
+- System reliability testing
+- Performance stability assessment
+
+**Security penetration testing**
+</TestType>
+			<TestingDataDescription>Comprehensive safety test suite including:
+- Prompt injection datasets
+- LLM generated engineered documents
+- Protected health information scenarios
+- Rare medical conditions
+- Complex approval scenarios involving logical/ numeric reasoning
+- System stress test cases
+- Security vulnerability tests</TestingDataDescription>
+			<ValidationProcessAndJustification>Multi-layer safety validation:
+- Automated safety checks
+- Compliance audit
+- Security assessment
+- Continuous monitoring system
+- Incident response testing
+- Regular compliance verification</ValidationProcessAndJustification>
+		</SafetyReliability>
+	</KeyMetrics>
+	<Resources>
+		<EvaluationReferences>Evaluation report or publication, if available: No publication - evaluation metrics are shared above</EvaluationReferences>
+		<PeerReviewedPublications>N/A</PeerReviewedPublications>
+		<PatientConsentOrDisclosure>N/A</PatientConsentOrDisclosure>
+	</Resources>
+	<Bibliography />
+</AppliedModelCard>
+
+
