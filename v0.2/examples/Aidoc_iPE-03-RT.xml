@@ -112,8 +112,16 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender.</MetricGoal>
 			<Results>
 				<MetricResult>
-					<Label>Demographics availability</Label>
-					<ValueJson>{"kind":"single","value":0,"unit":"%"}</ValueJson>
+					<Label>Significance vs Age</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Significance vs Gender</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Significance vs Location</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
 				</MetricResult>
 			</Results>
 			<Interpretation>Race, age, and gender distribution within the study data patient population was unavailable.</Interpretation>
