@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright (c) 2024 Coalition for Health AI, Inc.
+
+The license for this source code can be found at https://mc.chai.org/LICENSE.
+-->
+<AppliedModelCard xmlns="https://mc.chai.org/v0.2/schema.xsd">
+	<BasicInfo>
+		<ModelName>BriefCase-Quantification of Coronary Artery Calcification (CAC)</ModelName>
+		<ModelDeveloper>Aidoc</ModelDeveloper>
+		<DeveloperContact>www.aidoc.com/contact-support/ or email:info@aidoc.com</DeveloperContact>
+	</BasicInfo>
+	<ReleaseInfo>
+		<ReleaseStage>FDA Cleared, Commercial (K231631)</ReleaseStage>
+		<ReleaseDate>November 2023</ReleaseDate>
+		<ReleaseVersion>CAC-01</ReleaseVersion>
+		<GlobalAvailability>US, EU (CE Marked), UK (UKCA Marked), Canada (MDEL), Australia (ARTG), New Zealand, Israel (AMAR), UAE and South Africa.</GlobalAvailability>
+		<RegulatoryApproval>Please find attached the CAC-01 [510(k) summary](https://www.accessdata.fda.gov/cdrh_docs/pdf23/K231631.pdf).</RegulatoryApproval>
+	</ReleaseInfo>
+	<ModelSummary>
+		<Summary>The Coronary Artery Calcification Quantification solution is a standalone software as a medical device intended for use in the analysis of non-cardiac-gated non-contrast CT (NCCT) images that include the heart to assist hospital networks and appropriately trained medical specialists. The BriefCase-Quantification receives filtered routine, non-contrast, non-gated computed tomography (CT) scans, and processes them chronologically by running the algorithm on relevant series to evaluate calcified plaques in the coronary arteries. Following the AI processing, the output of the algorithm analysis is transferred to an image review software (the PACS or a desktop application). The device generates a four-category output corresponding with the estimated quantity of calcium detected: very low, low, medium, and high. The categories composing the output of the device correspond with a validated visual assessment categorization of none, mild, moderate, and severe [1] in agreement with categorized Agatston scores indicated in the literature (very low: 0; low: 1-100; medium: 101-400; high: ≥400). In addition, the categories accord with the 2016 SCCT/STR guidelines for coronary artery calcium scoring of non-contrast non-cardiac chest CT scans and are used as standard of care in clinical practice during CAC assessment in NCCT scans. The Coronary Artery Calcification Quantification software generates a preliminary summary report that is provided in the desktop application that includes applicable user warnings, the CAC detection category and number of slices that include CAC. The report presents preliminary results only and instructs the user to review the full image and any other clinical information before making a clinical decision. For all analyzed scans, the user will be presented in the PACS with all the slices containing the measured coronary calcifications. On these images, the calcified areas will be represented to provide the user visibility on the areas which supported the category output. These slices will be presented along with the original slices. Preview images of the represented calcium are non-diagnostic and are available in the PACS for informational purposes only.</Summary>
+		<Keywords />
+	</ModelSummary>
+	<UsesAndDirections>
+		<IntendedUseAndWorkflow>Coronary Artery Calcification-Quantification is a software intended for use in the analysis of non-cardiac-gated non-contrast CT (NCCT) images that include the heart in adult patients aged 30 and older. The device is intended to assist physicians by providing the user with a four-category Coronary Artery Calcification (CAC) of plaques, which present a risk for coronary artery disease.</IntendedUseAndWorkflow>
+		<PrimaryIntendedUsers>Coronary Artery Calcification Quantification to be used by appropriately trained medical specialists. radiologists, emergency physicians, surgeons, and cardiologists.</PrimaryIntendedUsers>
+		<HowToUse>For all analyzed scans, the user will be presented in the PACS with all the slices containing the measured coronary calcifications. On these images, the calcified areas will be represented to provide the user visibility on the areas which supported the category output. These slices will be presented along with the original slices. Preview images of the represented calcium are non-diagnostic and are available in the PACS for informational purposes only.</HowToUse>
+		<TargetedPatientPopulation>Adults or transitional adolescents aged 18 and older.</TargetedPatientPopulation>
+		<CautionedOutOfScopeSettings>results are not intended to be used on a stand-alone basis for clinical decision-making or otherwise preclude clinical assessment of cases. These measurements are unofficial, are not final, and are subject to change after review by a radiologist. For final clinically approved measurements, please refer to the official radiology report. Clinicians are responsible for viewing full images per the standard of care. Only for use by appropriately trained medical specialists. Please refer to BriefCase-Quantification User Guide ([UG0010](https://community.aidoc.com/private/login)) for further information on warnings and precautions.</CautionedOutOfScopeSettings>
+	</UsesAndDirections>
+	<Warnings>
+		<KnownRisksAndLimitations>Notified clinicians are responsible for viewing full images per the standard of care. Please refer to BriefCase-Quantification User Guide ([UG0010](https://community.aidoc.com/private/login)), label, and additional tutorial materials provided by the company for further information on risks and limitations.</KnownRisksAndLimitations>
+		<KnownBiasesOrEthicalConsiderations>None</KnownBiasesOrEthicalConsiderations>
+		<ClinicalRiskLevel>Low, Class II (FDA) / IIa (EU)</ClinicalRiskLevel>
+	</Warnings>
+	<TrustIngredients>
+		<AISystemFacts>
+			<OutcomesAndOutputs>he device is intended to assist physicians by providing the user with a four-category Coronary Artery Calcification (CAC) of plaques, which present a risk for coronary artery disease, together with preview axial images of the detected calcium meant for informational purposes only.</OutcomesAndOutputs>
+			<ModelType>Custom-built 3D deep convolutional neural network.</ModelType>
+			<InputDataSource>The BriefCase-Quantification imaging AI solutions are trained, tuned, and validated using diverse data sets. Specifically, Aidoc works with DICOM images, which capture anatomical and physiological data from medical imaging technologies like CT scans and X-rays. These data sets are sourced from a wide range of institutions, including community hospitals, academic centers, teleradiology providers, private clinics, and imaging centers across various global regions (e.g., east and west US, central US, EU, and other parts of the world).</InputDataSource>
+			<OutputAndInputDataTypes>Input: Real World Digital imaging and communications in medicine (DICOM) images.
+
+Inclusion criteria: Non-cardiac-gated non-contrast CT images that include the heart. Scans performed on adults/transitional adults ≥ 30 years of age. Slice thickness: 0.6 mm - 5.0 mm axial slices.
+
+Exclusion Criteria: All studies that are technically inadequate, including studies with motion artifacts, severe metal artifacts, sub-optimal or inadequate field of view.
+
+Output: The device generates a four-category output corresponding with the estimated quantity of calcium detected: very low, low, medium, and high. The categories composing the output of the device correspond with a validated visual assessment categorization of none, mild, moderate, and severe in agreement with categorized Agatston scores indicated in the literature.</OutputAndInputDataTypes>
+			<DevelopmentDataCharacterization>The Coronary Artery Calcification model has been trained, tuned, and validated on over 21,000 scans. The training and validation populations consist of a wide range of institutions and patient settings, including academic centers, community hospitals, teleradiology providers, private imaging centers, and clinics worldwide (specifically East, West, and Center of US, EU, Middle East, Oceania, Latin America and far east).
+
+Analyzed data included key demographic elements such as age, gender, comorbidities, geographical location, patient settings, reason for exam, and technological characteristics (e.g., equipment manufacturer, slice thickness, and modality model distribution).
+
+The time frame for the data used for the initial and retrained model construction and validation is 2022-2023.</DevelopmentDataCharacterization>
+			<BiasMitigationApproaches>Aidoc's AI solutions undergo rigorous training, validation, and monitoring to ensure robust and equitable performance across diverse patient populations. Bias mitigation and advancing care equity are highly prioritized throughout the design and development of Aidoc solutions, while working within the known constraints of limited accessibility to certain data elements.
+
+Recognizing these constraints, Aidoc creates proxies to effectively mitigate risks associated with the absence of certain demographic details, when applicable.
+
+Specifically, race, ethnicity, language, sexual orientation, gender identity, social determinants of health data, and health status assessment data are not accessible as part of the DICOM image.
+
+To address potential biases, Aidoc employs diverse data sets from a wide range of institutions and patient settings, including academic centers, community hospitals, teleradiology providers, private imaging centers, and clinics worldwide (specifically East, West, and Center of US, EU, Middle East, Oceania, Latin America and far east).
+
+Aidoc validates and measures the AI model across subpopulations to ensure a normal and predictable performance on them.
+
+Additionally, key demographic elements are analyzed such as age, gender, comorbidities, geographical location, patient settings, reason for exam, and technological characteristics (e.g., equipment manufacturer, slice thickness, and modality model distribution);
+
+Furthermore, Aidoc conducts multiple retraining throughout the lifecycle of each AI module to ensure increased generalizability across all the aforementioned parameters. While the exact size of Aidoc's training data sets is proprietary, over the model lifecycle, they may include up to millions of DICOM studies.</BiasMitigationApproaches>
+			<OngoingMaintenance>Aidoc's quality management system is ISO 13485 MDSAP and EU MDR certified, and 21 CFR Part 820 compliant, requiring structured and validated installation, servicing, and Post-Market Surveillance (PMS) activities.
+
+Specifically, Aidoc's PMS plan outlines the systematic collection and analysis of data regarding the device's safety and performance throughout its lifecycle.
+
+Data analysis methods, both qualitative and quantitative, are applied to the collected data. The results are documented in a PMS report and in a Periodic Safety Update Report (PSUR). In addition, Aidoc implements site-specific controls, ensuring high standards are consistently maintained across all operational locations. The current Malpositioned Endotracheal Tube model represents the first FDA clearance for Malpositioned Endotracheal Tube at Aidoc. Aidoc periodically retrains the algorithm on additional data and subjects the retrained versions to the required regulatory review and controls.
+
+An expanded dataset enhances the model's generalization capabilities and potentially elevates the product's performance (improved or non-inferior to the previously cleared device's Time-to-Notification and/or AUC). The inclusion of data from a broader and more diverse array of sources enhances the model's ability to perform effectively across a wider range of clinical and technical settings, particularly if any real-world data changes or if any data was underrepresented in the original dataset.
+
+**Continuous monitoring**: As detailed in the previous answer, Aidoc has robust monitoring systems in place to track the AI performance and identify any emerging issues, such as AI drift. In addition, regular audits and assessments ensure the model continues to deliver fair and accurate prioritizations.
+
+Furthermore, Aidoc remains committed to ongoing research and development to refine the AI and address any safety concerns that may arise. The Aidoc AI Monitoring team monitors algorithm performance 24/7 for the purpose of mitigating AI drift. The team monitors and considers aspects such as alert correctness, the timeliness of data available, data completeness, slice thickness, series correctness and relevancy, contrast phase, algorithm specificity, and algorithmic positive ratio.</OngoingMaintenance>
+			<Security>Aidoc's products are structured based on international quality, privacy, and security standards and frameworks, including ISO 13485, ISO 27001, ISO 27017, ISO 27018, ISO 27799, SOC 2 Type 2, Cyber Essentials, and C5. Aidoc follows a systematic approach, integrating these frameworks into Aidoc's Information Security Management System (ISMS) to ensure a holistic and proactive risk management strategy.
+
+Aidoc's risk management program involves regular risk assessments, leveraging common methodologies, to identify, evaluate, and prioritize risks. Continuous monitoring, periodic audits, and assessments contribute to the dynamic nature of Aidoc's risk management program, allowing us to adapt to evolving threats and vulnerabilities. Aidoc regularly monitors its server's logs for unusual activity and implements intrusion detection and prevention systems, paying attention to unusual or suspicious activities such as unexpected errors, system slowdowns, or strange user access patterns. Furthermore, Aidoc conducts multiple retraining throughout the lifecycle of each AI module.
+
+Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsible for enterprise oversight and direction for all security governance activities; governance for risk-related activities including Risk Identification, Management, Mitigation, and Remediation, and Risk Assessments; and responsibility for the planning, execution, and adherence with Aidoc Security Policies and Procedures, legal, regulatory, and contractual requirements.</Security>
+			<Transparency>The company ensures Transparency, Intelligibility, and Accountability in Aidoc's medical devices via its product design and its Quality Management System (QMS). Some examples include (non-exhaustive list):
+- Explainability and transparency features by design;
+- Reporting and feedback mechanism directly via the device's UI and additional communication in different platforms;
+- User guide, labeling, and additional tutorial materials are available electronically at all times via the user community;
+- Robust user training.</Transparency>
+		</AISystemFacts>
+		<TransparencyInformation>
+			<FundingSource>Aidoc's model creation is self-funded.</FundingSource>
+			<StakeholdersConsulted>Physicians, health system administrators, and patient groups were engaged in the development of the model</StakeholdersConsulted>
+		</TransparencyInformation>
+	</TrustIngredients>
+	<KeyMetrics>
+		<UsefulnessUsabilityEfficacy>
+			<MetricGoal>Evaluate the software's performance in identifying head CTs (with and without contrast) containing Brain Aneurysm from five study sites. 268 cases were selected, 96 positive cases and 172 negative cases (reports on images with Brain Aneurysm versus without Brain Aneurysm findings) included in the analysis.</MetricGoal>
+			<Results>
+				<MetricResult>
+					<Label>Sensitivity</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":88.5,"lower":80.4,"upper":94.1,"level":95,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Specificity</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":89.5,"lower":84.0,"upper":93.7,"level":95,"unit":"%"}</ValueJson>
+				</MetricResult>
+			</Results>
+			<Interpretation>Primary endpoints were sensitivity and specificity with an 80% performance goal. Secondary endpoints were BriefCase time-to-notification compared to the predicate device, Positive Predictive Value (PPV), Negative Predictive Value (NPV), Positive Likelihood Ratio (PLR), and Negative Likelihood Ratio (NLR).</Interpretation>
+			<TestType>Retrospective, blinded, multicenter study.</TestType>
+			<TestingDataDescription>Race, age, and gender distribution within the study data patient population was unavailable.</TestingDataDescription>
+			<ValidationProcessAndJustification>Methods used are described in the [510(k) summary](https://www.accessdata.fda.gov/cdrh_docs/pdf23/K231631.pdf).</ValidationProcessAndJustification>
+		</UsefulnessUsabilityEfficacy>
+		<FairnessEquity>
+			<MetricGoal>N/A</MetricGoal>
+			<Results>
+				<MetricResult>
+					<Label>Demographics availability</Label>
+					<ValueJson>{"kind":"single","value":0,"unit":"%"}</ValueJson>
+				</MetricResult>
+			</Results>
+			<Interpretation>Race, age, and gender distribution within the study data patient population was unavailable.</Interpretation>
+			<TestType>Retrospective, blinded, multicenter study</TestType>
+			<TestingDataDescription>Race, age, and gender distribution within the study data patient population was unavailable.</TestingDataDescription>
+			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf23/K231631.pdf)</ValidationProcessAndJustification>
+		</FairnessEquity>
+		<SafetyReliability>
+			<MetricGoal>The time-to-notification metric observed for the BriefCase software in the five medical centers was compared to the equivalent metric of prior predicate devices.</MetricGoal>
+			<Results>
+				<MetricResult>
+					<Label>Standard of care time-to-exam-open</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":89.4,"lower":56.0,"upper":122.7,"level":95,"unit":"minutes"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Device time-to-notification</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":4.2,"lower":3.9,"upper":4.5,"level":95,"unit":"minutes"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Mean difference (SoC minus device)</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":85.2,"lower":51.8,"upper":118.6,"level":95,"unit":"minutes"}</ValueJson>
+				</MetricResult>
+			</Results>
+			<Interpretation>The time-to-notification results obtained for the subject BriefCase device showed improvement with regard to time savings to the standard of care review. Additional summary stats: SoC median 66.0 (IQR 50.7); device median 4.2 (IQR 1.8); mean difference median 63.1 (IQR 50.1).</Interpretation>
+			<TestType>Retrospective, blinded, multicenter study</TestType>
+			<TestingDataDescription>The BriefCase time-to-notification includes the time to get the DICOM exam, de-identify it, upload it to the cloud, analyze and send a notification on a positive suspect case back to the desktop application. The BriefCase time-to-notification was measured for all True Positive cases (i.e., identified as positive both by the reviewers as well as the BriefCase device).</TestingDataDescription>
+			<ValidationProcessAndJustification>[Link to Methods Description](https://www.accessdata.fda.gov/cdrh_docs/pdf21/K213721.pdf)
+
+AiDoc develops software within a Design Control process that is aligned with FDA 21 CFR Part 820 and ISO 62304 Medical device software - Software life cycle processes.</ValidationProcessAndJustification>
+		</SafetyReliability>
+	</KeyMetrics>
+	<Resources>
+		<EvaluationReferences>Please reference our clinical [compendium](https://www.aidoc.com/learn/ebooks-whitepapers/aidoc-clinical-compendium/).</EvaluationReferences>
+		<PeerReviewedPublications>Aidoc's clinical compendium with 100+ Peer-reviewed publications or abstract/conference presentations are available at the following [link](https://www.aidoc.com/learn/ebooks-whitepapers/aidoc-clinical-compendium/).</PeerReviewedPublications>
+		<PatientConsentOrDisclosure>N/A</PatientConsentOrDisclosure>
+	</Resources>
+	<Bibliography />
+</AppliedModelCard>
