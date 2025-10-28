@@ -95,7 +95,16 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 	<KeyMetrics>
 		<UsefulnessUsabilityEfficacy>
 			<MetricGoal>Evaluate the software's performance in identifying CTPA images containing Central Pulmonary Embolism (Central PE) in 328 cases from unique patients, from 6 US-based clinical sites.</MetricGoal>
-			<Result>Sensitivity and specificity exceeded the 80% performance goal. Sensitivity was 89.2% (95% CI: 82.5%, 93.9%) and specificity was 94.5% (95% CI: 90.3%, 97.2%)</Result>
+			<Results>
+				<MetricResult>
+					<Label>Sensitivity</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":89.2,"lower":82.5,"upper":93.9,"level":95,"unit":"%"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Specificity</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":94.5,"lower":90.3,"upper":97.2,"level":95,"unit":"%"}</ValueJson>
+				</MetricResult>
+			</Results>
 			<Interpretation>Primary endpoints were sensitivity and specificity with an 80% performance goal. Secondary endpoints were BriefCase time-to-notification compared to the predicate device, Positive Predictive Value (PPV), Negative Predictive Value (NPV), Positive Likelihood Ratio (PLR), and Negative Likelihood Ratio (NLR).</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study.</TestType>
 			<TestingDataDescription>The mean age of patients whose scans were reviewed for Central PE was 60.3 years, with a standard deviation of 17.4 years. Gender distribution was 44.5% male, and 55.5% female. Race distribution within the study data patient population was unavailable. None of the potential covariates demonstrated statistical significance, thus, device performance did not meaningfully interact with location, gender or age.</TestingDataDescription>
@@ -103,7 +112,12 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 		</UsefulnessUsabilityEfficacy>
 		<FairnessEquity>
 			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender. Goal of metric: The time-to-notification metric observed for the BriefCase software in the five medical centers was compared to the</MetricGoal>
-			<Result>Race, age, and gender distribution within the study data patient population was unavailable.</Result>
+			<Results>
+				<MetricResult>
+					<Label>Demographics availability</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+			</Results>
 			<Interpretation>Race, age, and gender distribution within the study data patient population was unavailable.</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study</TestType>
 			<TestingDataDescription>The mean age of patients whose scans were reviewed for Central PE was 60.3 years, with a standard deviation of 17.4 years. Gender distribution was 44.5% male, and 55.5% female. Race, age, and gender distribution within the study data patient population was unavailable.</TestingDataDescription>
@@ -111,7 +125,16 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 		</FairnessEquity>
 		<SafetyReliability>
 			<MetricGoal>The time-to-notification metric observed for the BriefCase software in the five medical centers was compared to the equivalent metric of prior predicate devices.</MetricGoal>
-			<Result>mean time-to-notification for the subject Central PE triage was 29.3 seconds (95% CI: 26.8- 31.9). The time-to-notification for the predicate Rapid PE Triage and Notification (PETN) was 158.4 seconds (95% CI: 140.4-288).</Result>
+			<Results>
+				<MetricResult>
+					<Label>Mean time-to-notification (device)</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":29.3,"lower":26.8,"upper":31.9,"level":95,"unit":"seconds"}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Mean time-to-notification (predicate)</Label>
+					<ValueJson>{"kind":"estimate_ci","estimate":158.4,"lower":140.4,"upper":288.0,"level":95,"unit":"seconds"}</ValueJson>
+				</MetricResult>
+			</Results>
 			<Interpretation>The time-to-notification results obtained for the subject BriefCase device showed improvement with regard to time savings to the standard of care review.</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study</TestType>
 			<TestingDataDescription>The BriefCase time-to-notification includes the time to get the DICOM exam, de-identify it, upload it to the cloud, analyze and send a notification on a positive suspect case back to the desktop application. The BriefCase time-to-notification was measured for all True Positive cases (i.e., identified as positive both by the reviewers as well as the BriefCase device).</TestingDataDescription>

@@ -110,7 +110,20 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 		</UsefulnessUsabilityEfficacy>
 		<FairnessEquity>
 			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender.</MetricGoal>
-			<Result>Race, age, and gender distribution within the study data patient population was unavailable.</Result>
+			<Results>
+				<MetricResult>
+					<Label>Significance vs Age</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Significance vs Gender</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Significance vs Location</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+			</Results>
 			<Interpretation>Device performance did not meaningfully interact with location, gender or age (Race distribution for sample was unavailable).</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study</TestType>
 			<TestingDataDescription>The mean age of patients whose scans were reviewed in the study was 59.3 years, with standard deviation of 19.8 years. Gender distribution was 51.3% male, and 48.7% female</TestingDataDescription>

@@ -110,7 +110,20 @@ Additionally, Aidoc's Governance, Risk, and Compliance (GRC) Program is responsi
 		</UsefulnessUsabilityEfficacy>
 		<FairnessEquity>
 			<MetricGoal>Evaluate for differences in performance (sensitivity &amp; specificity) based on available socio-demographic variables of age, location and gender.</MetricGoal>
-			<Result>No statistically significant interaction between performance and age, gender, or location.</Result>
+			<Results>
+				<MetricResult>
+					<Label>Significance vs Age</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Significance vs Gender</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+				<MetricResult>
+					<Label>Significance vs Location</Label>
+					<ValueJson>{"kind":"single","value":0}</ValueJson>
+				</MetricResult>
+			</Results>
 			<Interpretation>Device performance did not meaningfully interact with location, gender or age (Race distribution for sample was unavailable).</Interpretation>
 			<TestType>Retrospective, blinded, multicenter study</TestType>
 			<TestingDataDescription>In the pivotal study from the most recent FDA clearance, the mean age of patients whose scans were reviewed for CSF was 62.0 years, with a standard deviation of 19.6 years. Gender distribution was 47.2% male, and 49.3% female.</TestingDataDescription>
