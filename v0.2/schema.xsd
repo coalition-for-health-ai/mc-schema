@@ -38,11 +38,11 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 			<xs:element name="ReleaseDate" type="xs:string" />
 			<xs:element name="ReleaseVersion" type="xs:string" />
 			<xs:element name="GlobalAvailability" type="xs:string" />
-			<xs:element name="EHRInteroperability" type="mc:EHRInteroperabilityType" minOccurs="0" />
+			<xs:element name="EHRCompatability" type="mc:EHRCompatabilityType" minOccurs="0" />
 			<xs:element name="RegulatoryApproval" type="xs:string" minOccurs="0" />
 		</xs:sequence>
 	</xs:complexType>
-	<xs:complexType name="EHRInteroperabilityType">
+	<xs:complexType name="EHRCompatabilityType">
 		<xs:sequence>
 			<xs:element name="EHR" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
 		</xs:sequence>
