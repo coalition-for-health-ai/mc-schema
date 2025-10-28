@@ -15,13 +15,13 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 		<ReleaseDate>June 2024</ReleaseDate>
 		<ReleaseVersion>2.0</ReleaseVersion>
 		<GlobalAvailability>United States, Canada, and Mexico</GlobalAvailability>
-		<EHRCompatability>
+		<EHRCompatibility>
 			<EHR>Epic</EHR>
 			<EHR>Cerner</EHR>
 			<EHR>Athena</EHR>
 			<EHR>Allscripts</EHR>
 			<EHR>NextGen</EHR>
-		</EHRCompatability>
+		</EHRCompatibility>
 		<RegulatoryApproval>HIPAA Compliant</RegulatoryApproval>
 	</ReleaseInfo>
 	<ModelSummary>
