@@ -4,7 +4,7 @@ Copyright (c) 2024 Coalition for Health AI, Inc.
 
 The license for this source code can be found at https://mc.chai.org/LICENSE.
 -->
-<AppliedModelCard xmlns="https://mc.chai.org/v0.1/schema.xsd">
+<AppliedModelCard xmlns="https://mc.chai.org/v0.2/schema.xsd">
 	<BasicInfo>
 		<ModelName>OrbDoc Voice-to-SOAP Documentation System</ModelName>
 		<ModelDeveloper>OrbDoc</ModelDeveloper>

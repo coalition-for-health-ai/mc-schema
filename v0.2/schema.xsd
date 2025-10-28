@@ -6,8 +6,8 @@ The license for this source code can be found at https://mc.chai.org/LICENSE.
 -->
 <xs:schema
 	xmlns:xs="http://www.w3.org/2001/XMLSchema"
-	xmlns:mc="https://mc.chai.org/v0.1/schema.xsd"
-	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="https://mc.chai.org/v0.1/schema.xsd" version="v0.1">
+	xmlns:mc="https://mc.chai.org/v0.2/schema.xsd"
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#" elementFormDefault="qualified" targetNamespace="https://mc.chai.org/v0.2/schema.xsd" version="v0.2">
 	<xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd" />
 	<xs:element name="AppliedModelCard">
 		<xs:complexType>

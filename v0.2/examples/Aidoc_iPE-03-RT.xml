@@ -5,7 +5,7 @@ Copyright (c) 2024 Coalition for Health AI, Inc.
 The license for this source code can be found at https://mc.chai.org/LICENSE.
 -->
 <AppliedModelCard
-	xmlns="https://mc.chai.org/v0.1/schema.xsd"
+	xmlns="https://mc.chai.org/v0.2/schema.xsd"
 	xmlns:bibtex="http://bibtexml.sf.net/">
 	<BasicInfo>
 		<ModelName>BriefCase-Triage for Incidental Pulmonary Embolism</ModelName>

@@ -4,7 +4,7 @@ Copyright (c) 2024 Coalition for Health AI, Inc.
 
 The license for this source code can be found at https://mc.chai.org/LICENSE.
 -->
-<AppliedModelCard xmlns="https://mc.chai.org/v0.1/schema.xsd">
+<AppliedModelCard xmlns="https://mc.chai.org/v0.2/schema.xsd">
 	<BasicInfo>
 		<ModelName>BriefCase-Quantification of Coronary Artery Calcification (CAC)</ModelName>
 		<ModelDeveloper>Aidoc</ModelDeveloper>
